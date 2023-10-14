@@ -4,10 +4,8 @@ const textRequired = document.querySelector('.text-required')
 const form = document.getElementById('form')
 
 inputEmail.addEventListener('input', () => {
-    if(validEmail = true && inputEmail.value !== '') {
         textRequired.classList.remove('required')
         inputEmail.classList.remove('required')
-    }
 })
 
 btnSignup.addEventListener('click', function(event){
