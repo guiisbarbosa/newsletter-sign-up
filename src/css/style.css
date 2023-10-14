@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--charcoal-grey);
+    color: var(--dark-grey);
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box {
+    max-width: 925px;
+    height: 650px;
+    background-color: var(--white);
+    padding:  25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+} 
+
+.container .box .image-top {
+    display: none;
+}
+
+.container .box .info-box {
+    height: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container .box .info-box h1 {
+    font-size: 55px;
+}
+
+.container .box .info-box p{
+    line-height: 150%;
+}
+
+.container .box .info-box ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.container .box .info-box ul li::before {
+    content: url('../images/icon-list.svg');
+}
+
+.container .box .info-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container .box .info-box .label-email {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.container .box .info-box .label-email span {
+    color: var(--tomato);
+    opacity: 0;
+}
+
+.container .box .info-box .label-email span.required {
+    color: var(--tomato);
+    opacity: 1;
+}
+
+.container .box .info-box form input {
+    height: 55px;
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid var(--grey);
+    cursor: pointer;
+}
+
+.container .box .info-box form input.required {
+    border-color: var(--tomato);
+    color: var(--tomato);
+    background-color: hsla(4, 100%, 67%, .2);
+}
+
+.container .box .info-box form input.required::placeholder{
+    color: var(--tomato);
+}
+
+.container .box .info-box form button {
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.container .box .info-box form button:hover {
+    background: var(--hover-color);
+    box-shadow: 0px 9px 20px hsla(4, 100%, 67%, .5);
+}

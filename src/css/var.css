@@ -1,0 +1,8 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --hover-color: linear-gradient(90deg, rgba(255,77,108,1) 0%, rgba(253,103,70,1) 100%);
+}

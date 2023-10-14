@@ -1,0 +1,16 @@
+@media (max-width: 500px) {
+    body {
+        background-color: var(--white);
+        padding: 25px;
+    }
+
+    .container .box {
+        height: 625px;
+        padding: 0;
+        display: block;
+    }
+
+    .container .box p {
+        margin-bottom: 250px;
+    }
+}
